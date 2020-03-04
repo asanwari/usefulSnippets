@@ -1,11 +1,11 @@
 # This code recursivly lists all files and sub-directories in a given directory
-# and stores it in a json file. Currently, import os
+# and stores it in a json file. 
 
 # input: python fileLister.py <parent_dir>
 # output format: {"files": ["f1",f2"], "child_dir_1_name": {"files": [],"second_level_dir":{...}}, "child_dir_2_name": {"files": []}}
 
 
-
+import os
 import sys
 import json
 import itertools
