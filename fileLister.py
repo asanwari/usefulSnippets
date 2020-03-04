@@ -31,7 +31,7 @@ def list_files(path, dir_obj):
 			# new object for path
 			dir_obj[path] = {}
 			# new path
-			new_path = d[0]+ '\\'+ path
+			new_path = os.path.join(d[0], path)
 			print(f'going into {new_path}'.format(new_path = new_path) )
 			# recursive call for the new path
 			dir_obj[path] = list_files(new_path, dir_obj[path])
